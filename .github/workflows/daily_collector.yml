@@ -1,0 +1,36 @@
+name: Daily Stock Database Collector
+
+on:
+  schedule:
+    # מורץ בימים שני עד שישי בשעה 23:15 שעון ישראל (21:15 UTC)
+    - cron: '15 21 * * 1-5'
+  workflow_dispatch: # מאפשר הרצה ידנית בלחיצת כפתור
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install yfinance pandas numpy pytz
+
+    - name: Run Data Collector
+      run: python collector_script.py
+
+    - name: Commit and Push Updated Database
+      run: |
+        git config --global user.name "Automation Bot"
+        git config --global user.email "bot@github.com"
+        git add stock_history_db.json
+        git commit -m "Auto-update stock database [skip ci]" || exit 0
+        git push
