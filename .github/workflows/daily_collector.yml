@@ -31,6 +31,8 @@ jobs:
       run: |
         git config --global user.name "Automation Bot"
         git config --global user.email "bot@github.com"
+        git fetch origin main
+        git pull origin main --rebase
         git add stock_history_db.json
-        git commit -m "Auto-update stock database [skip ci]" || exit 0
-        git push
+        git commit -m "Auto-update stock history [skip ci]" || exit 0
+        git push origin main
