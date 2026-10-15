@@ -4056,5 +4056,147 @@
         "ShortFloat": "18.7%"
       }
     }
+  },
+  {
+    "timestamp": "2026-10-15 19:40:04 EST",
+    "date": "2026-10-15",
+    "stocks": {
+      "OPEN": {
+        "Price": 2.31,
+        "VWAP": 2.17,
+        "RSI": 69.6,
+        "Volume": 3281675,
+        "MarketCap": 2252931328,
+        "ShortFloat": "26.62%"
+      },
+      "BBAI": {
+        "Price": 2.33,
+        "VWAP": 2.24,
+        "RSI": 87.4,
+        "Volume": 507019,
+        "MarketCap": 1117222144,
+        "ShortFloat": "29.54%"
+      },
+      "PLTR": {
+        "Price": 200.5,
+        "VWAP": 197.62,
+        "RSI": 68.4,
+        "Volume": 929473,
+        "MarketCap": 481813200896,
+        "ShortFloat": "2.59%"
+      },
+      "SOFI": {
+        "Price": 15.07,
+        "VWAP": 14.56,
+        "RSI": 70.2,
+        "Volume": 2696641,
+        "MarketCap": 19489796096,
+        "ShortFloat": "16.87%"
+      },
+      "ICCM": {
+        "Price": 1.03,
+        "VWAP": 1.03,
+        "RSI": 51.6,
+        "Volume": 5100,
+        "MarketCap": 4823916,
+        "ShortFloat": "1.48%"
+      },
+      "QS": {
+        "Price": 4.22,
+        "VWAP": 4.09,
+        "RSI": 64.9,
+        "Volume": 881774,
+        "MarketCap": 2618850304,
+        "ShortFloat": "21.82%"
+      },
+      "SMR": {
+        "Price": 6.15,
+        "VWAP": 5.86,
+        "RSI": 77.8,
+        "Volume": 1354511,
+        "MarketCap": 2523895808,
+        "ShortFloat": "20.72%"
+      },
+      "NVDA": {
+        "Price": 217.24,
+        "VWAP": 216.55,
+        "RSI": 52.5,
+        "Volume": 3883620,
+        "MarketCap": 5245452681216,
+        "ShortFloat": "1.34%"
+      },
+      "AMD": {
+        "Price": 562.13,
+        "VWAP": 547.54,
+        "RSI": 72.7,
+        "Volume": 738162,
+        "MarketCap": 917826371584,
+        "ShortFloat": "2.42%"
+      },
+      "META": {
+        "Price": 736.49,
+        "VWAP": 733.5,
+        "RSI": 36.8,
+        "Volume": 521103,
+        "MarketCap": 1876798734336,
+        "ShortFloat": "1.52%"
+      },
+      "GOOG": {
+        "Price": 344.86,
+        "VWAP": 345.12,
+        "RSI": 40.6,
+        "Volume": 786831,
+        "MarketCap": 4218226999296,
+        "ShortFloat": "N/A"
+      },
+      "MRVL": {
+        "Price": 241.38,
+        "VWAP": 235.31,
+        "RSI": 76.1,
+        "Volume": 749260,
+        "MarketCap": 216803508224,
+        "ShortFloat": "3.21%"
+      },
+      "ORCL": {
+        "Price": 134.46,
+        "VWAP": 132.22,
+        "RSI": 52.8,
+        "Volume": 1216231,
+        "MarketCap": 407645945856,
+        "ShortFloat": "2.6%"
+      },
+      "SEDG": {
+        "Price": 31.42,
+        "VWAP": 30.85,
+        "RSI": 68.6,
+        "Volume": 170313,
+        "MarketCap": 1933754240,
+        "ShortFloat": "21.02%"
+      },
+      "NOW": {
+        "Price": 148.6,
+        "VWAP": 146.74,
+        "RSI": 63.8,
+        "Volume": 916442,
+        "MarketCap": 153600884736,
+        "ShortFloat": "2.87%"
+      },
+      "SKM": {
+        "Price": 32.84,
+        "VWAP": 32.72,
+        "RSI": 68.9,
+        "Volume": 378491,
+        "MarketCap": 12603111424,
+        "ShortFloat": "0.62%"
+      },
+      "PENG": {
+        "Price": 61.84,
+        "VWAP": 60.95,
+        "RSI": 80.8,
+        "Volume": 202568,
+        "MarketCap": 3169873408,
+        "ShortFloat": "18.7%"
+      }
+    }
   }
 ]
