@@ -1,10 +1,10 @@
-name: High-Frequency Stock Data Collector
+name: High-Frequency Stock Data Collector (True Cycle)
 
 on:
   schedule:
-    # מורץ אוטומטית כל 5 דקות בימים שני עד שישי (מקסימום תדירות ב-GitHub Actions)
-    - cron: '*/5 * * * 1-5'
-  workflow_dispatch: # מאפשר גם הרצה ידנית בלחיצת כפתור מתי שתחפוץ
+    # Trigger less often (e.g., every 4 or 5 hours) to spin up a fresh loop runner
+    - cron: '0 */4 * * 1-5'
+  workflow_dispatch: 
 
 jobs:
   build:
@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
 
@@ -24,18 +24,27 @@ jobs:
         python -m pip install --upgrade pip
         pip install yfinance pandas numpy pytz
 
-    - name: Run Data Collector
-      run: python collector_script_new.py
-
-    - name: Commit and Push Updated Database
+    # We tell Python to handle the 5-minute loop inside the single runner session
+    - name: Run Data Collector Continuous Cycle
       run: |
-        git config --global user.name "Automation Bot"
-        git config --global user.email "bot@github.com"
+        python -c '
+        import time, subprocess
         
-        # סנכרון חכם מול השרת למניעת התנגשויות דחיפה
-        git fetch origin main
-        git pull origin main --rebase || echo "No remote changes"
-        
-        git add stock_history_db.json
-        git commit -m "Auto-update high-frequency stock database [skip ci]" || exit 0
-        git push origin main
+        # Loop 48 times (48 * 5 minutes = 4 hours total duration)
+        for i in range(48):
+            print(f"--- Cycle {i+1} starting ---")
+            
+            # Execute your collection script
+            subprocess.run(["python", "collector_script_new.py"])
+            
+            # Commit and push right after collecting
+            subprocess.run(["git", "config", "--global", "user.name", "Automation Bot"])
+            subprocess.run(["git", "config", "--global", "user.email", "bot@github.com"])
+            subprocess.run(["git", "add", "stock_history_db.json"])
+            # The "|| true" prevents the workflow failing if there are no new changes
+            subprocess.run("git commit -m \"Auto-update high-frequency stock database [skip ci]\" || true", shell=True)
+            subprocess.run(["git", "push", "origin", "main"])
+            
+            print("Cycle completed. Sleeping for 5 minutes...")
+            time.sleep(300) 
+        '
