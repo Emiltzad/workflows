@@ -3,7 +3,7 @@ name: High-Frequency Stock Data Collector (True Cycle)
 on:
   schedule:
     # Trigger less often (e.g., every 4 or 5 hours) to spin up a fresh loop runner
-    - cron: '0 */4 * * 1-5'
+    - cron: '0 9 * * 1-5'
   workflow_dispatch: 
 
 jobs:
@@ -30,7 +30,7 @@ jobs:
         python -c '
         import time, subprocess
         
-        # Loop 48 times (48 * 5 minutes = 4 hours total duration)
+        # Loop 600 times (48 * 5 minutes = 4 hours total duration)
         for i in range(48):
             print(f"--- Cycle {i+1} starting ---")
             
