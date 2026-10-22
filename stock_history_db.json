@@ -15740,5 +15740,191 @@
                 "BB_Low": 670.73
             }
         }
+    },
+    {
+        "timestamp": "2026-10-22 19:08:06",
+        "date": "2026-10-22",
+        "stocks": {
+            "^VIX": {
+                "Price": 20.0,
+                "Daily %": 19.9,
+                "Market Cap": "N/A",
+                "RSI": 66.4,
+                "RVOL": 1.0,
+                "MFI": "N/A",
+                "BB_Up": 19.45,
+                "BB_Low": 13.26
+            },
+            "BBAI": {
+                "Price": 2.12,
+                "Daily %": -3.42,
+                "Market Cap": "1.01B",
+                "RSI": 26.8,
+                "RVOL": 0.63,
+                "MFI": 31.9,
+                "BB_Up": 2.88,
+                "BB_Low": 1.98
+            },
+            "SMR": {
+                "Price": 5.34,
+                "Daily %": -2.93,
+                "Market Cap": "2.19B",
+                "RSI": 17.7,
+                "RVOL": 0.75,
+                "MFI": 22.0,
+                "BB_Up": 8.98,
+                "BB_Low": 4.88
+            },
+            "MRVL": {
+                "Price": 220.67,
+                "Daily %": -9.84,
+                "Market Cap": "198.32B",
+                "RSI": 29.2,
+                "RVOL": 0.78,
+                "MFI": 33.4,
+                "BB_Up": 295.45,
+                "BB_Low": 221.13
+            },
+            "GOOG": {
+                "Price": 319.56,
+                "Daily %": -3.44,
+                "Market Cap": "3908.20B",
+                "RSI": 30.4,
+                "RVOL": 0.84,
+                "MFI": 51.2,
+                "BB_Up": 354.67,
+                "BB_Low": 326.64
+            },
+            "ICCM": {
+                "Price": 1.01,
+                "Daily %": -6.48,
+                "Market Cap": "4.68M",
+                "RSI": 12.2,
+                "RVOL": 0.77,
+                "MFI": 17.7,
+                "BB_Up": 1.81,
+                "BB_Low": 0.74
+            },
+            "SOFI": {
+                "Price": 14.73,
+                "Daily %": -1.11,
+                "Market Cap": "19.03B",
+                "RSI": 38.9,
+                "RVOL": 0.73,
+                "MFI": 43.8,
+                "BB_Up": 16.65,
+                "BB_Low": 14.1
+            },
+            "QS": {
+                "Price": 4.09,
+                "Daily %": 2.64,
+                "Market Cap": "2.53B",
+                "RSI": 36.1,
+                "RVOL": 1.73,
+                "MFI": 55.5,
+                "BB_Up": 4.98,
+                "BB_Low": 3.75
+            },
+            "OPEN": {
+                "Price": 2.0,
+                "Daily %": 2.31,
+                "Market Cap": "1.92B",
+                "RSI": 32.8,
+                "RVOL": 0.76,
+                "MFI": 33.8,
+                "BB_Up": 2.58,
+                "BB_Low": 1.88
+            },
+            "PLTR": {
+                "Price": 195.26,
+                "Daily %": -3.2,
+                "Market Cap": "469.28B",
+                "RSI": 54.7,
+                "RVOL": 0.66,
+                "MFI": 59.9,
+                "BB_Up": 210.4,
+                "BB_Low": 179.83
+            },
+            "NVDA": {
+                "Price": 211.71,
+                "Daily %": -4.62,
+                "Market Cap": "5112.04B",
+                "RSI": 29.5,
+                "RVOL": 0.78,
+                "MFI": 36.7,
+                "BB_Up": 242.4,
+                "BB_Low": 210.04
+            },
+            "AMD": {
+                "Price": 504.81,
+                "Daily %": -8.67,
+                "Market Cap": "824.09B",
+                "RSI": 23.3,
+                "RVOL": 0.94,
+                "MFI": 23.0,
+                "BB_Up": 677.86,
+                "BB_Low": 507.65
+            },
+            "ORCL": {
+                "Price": 124.05,
+                "Daily %": -3.93,
+                "Market Cap": "376.07B",
+                "RSI": 35.3,
+                "RVOL": 0.83,
+                "MFI": 36.8,
+                "BB_Up": 147.36,
+                "BB_Low": 124.21
+            },
+            "SEDG": {
+                "Price": 32.61,
+                "Daily %": -1.75,
+                "Market Cap": "2.01B",
+                "RSI": 47.9,
+                "RVOL": 0.43,
+                "MFI": 60.0,
+                "BB_Up": 34.28,
+                "BB_Low": 30.16
+            },
+            "NOW": {
+                "Price": 156.7,
+                "Daily %": 2.34,
+                "Market Cap": "162.01B",
+                "RSI": 77.7,
+                "RVOL": 1.13,
+                "MFI": 67.7,
+                "BB_Up": 154.53,
+                "BB_Low": 126.45
+            },
+            "SKM": {
+                "Price": 30.78,
+                "Daily %": -3.99,
+                "Market Cap": "11.82B",
+                "RSI": 17.4,
+                "RVOL": 0.47,
+                "MFI": 15.9,
+                "BB_Up": 37.87,
+                "BB_Low": 30.69
+            },
+            "PENG": {
+                "Price": 51.59,
+                "Daily %": -11.63,
+                "Market Cap": "2.64B",
+                "RSI": 40.8,
+                "RVOL": 0.52,
+                "MFI": 72.5,
+                "BB_Up": 79.85,
+                "BB_Low": 45.16
+            },
+            "META": {
+                "Price": 641.95,
+                "Daily %": -7.97,
+                "Market Cap": "1635.37B",
+                "RSI": 29.3,
+                "RVOL": 1.67,
+                "MFI": 44.9,
+                "BB_Up": 774.46,
+                "BB_Low": 671.05
+            }
+        }
     }
 ]
