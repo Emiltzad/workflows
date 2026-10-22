@@ -31,7 +31,7 @@ jobs:
         import time, subprocess
         
         # Loop 600 times (48 * 5 minutes = 4 hours total duration)
-        for i in range(48):
+        for i in range(600):
             print(f"--- Cycle {i+1} starting ---")
             
             # Execute your collection script
