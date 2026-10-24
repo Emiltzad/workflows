@@ -26,7 +26,7 @@ TICKERS = [
     "META",
 ]
 
-DB_FILENAME = "stock_history_db.json"
+DB_FILENAME = "stock_history_db_new.json"
 
 
 def calculate_indicators(df):
